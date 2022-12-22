@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "sudo docker build -t war:$BUILD_ID ."
+                sh "docker build -t war:$BUILD_ID ."
             }
         }
     }
